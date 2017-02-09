@@ -1,0 +1,248 @@
+/*--------------------------------------------------------------
+Typography header:#1a282e; background:#e6e3e3; orange #F68619 footer:223842;
+--------------------------------------------------------------*/
+h2, h3, h4, h5, body, b {
+  color: white;
+  font-family: Montserrat; }
+
+body {
+  background: #e6e3e3;
+  color: black; }
+
+header {
+  background: #1a282e; }
+
+footer {
+  background: #223842; }
+
+main {
+  margin: 8% 5% 8% 5%;
+  display: flex;
+  justify-content: space-between; }
+  main nav {
+    width: 23%;
+    background: #1a282e;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  main section.frame {
+    width: 75%;
+    padding: 4%;
+    padding-top: 0;
+    display: flex;
+    background: #1a282e;
+    justify-content: center; }
+
+figure.profile_pic {
+  position: relative; }
+  figure.profile_pic img {
+    width: 100%;
+    height: auto; }
+  figure.profile_pic figcaption {
+    position: absolute;
+    bottom: 0;
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.6);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    width: 100%; }
+
+.profile_nav .profile_info {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center; }
+  .profile_nav .profile_info h3 {
+    margin: 0;
+    padding: 0.5em 0 0 0; }
+  .profile_nav .profile_info p {
+    word-wrap: break-word;
+    max-width: 100%;
+    padding: 0.8em;
+    padding-bottom: 10%;
+    color: white;
+    font-size: 0.8em;
+    text-align: justify; }
+  .profile_nav .profile_info a {
+    width: 60%;
+    display: block;
+    text-align: center;
+    background: orange;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: white;
+    border-radius: 10px; }
+    .profile_nav .profile_info a:hover {
+      background: #FA8E24;
+      text-decoration: none; }
+
+.error{
+  color: red;
+  text-decoration: underline;
+}
+
+section.frame {
+  display: flex;
+  justify-content: center; }
+  section.frame form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2%;
+    color: white; }
+    section.frame form h2 {
+      padding-bottom: 1em; }
+    section.frame form #japege_form {
+      display: flex;
+      justify-content: space-between; }
+      section.frame form #japege_form .info {
+        width: 45%; }
+      section.frame form #japege_form .address {
+        display: flex;
+        flex-direction: column;
+        width: 45%; }
+        section.frame form #japege_form .address button {
+          align-self: center; }
+
+@media (max-width: 500px) {
+  /*Header queries start*/
+  .user_icon {
+    visibility: visible;
+    height: 30px;
+    width: 30px; }
+  .login_text {
+    visibility: hidden;
+    font-size: 0em; }
+  .category_select {
+    width: 30%;
+    font-size: 0.7em; }
+  #logo_heading {
+    width: 10%; }
+  #japege {
+    visibility: hidden;
+    font-size: 0;
+    margin: 0; }
+  #j {
+    visibility: visible;
+    position: absolute;
+    left: 10px;
+    top: -5px; }
+  footer .about {
+    flex-direction: column; }
+  footer .about a {
+    font-size: 1.2em;
+    padding-top: 10%;
+    padding-left: 30%; }
+  .email_signup h2 {
+    padding-top: 5%;
+    font-size: 1.1em; }
+  .social_media a {
+    padding-top: 20%; }
+  .social_media img {
+    max-height: 30px;
+    max-width: 30px;
+    margin-left: 0%; } }
+
+@media (max-width: 672px) and (min-width: 501px) {
+  /*Header queries start*/
+  .user_icon {
+    visibility: visible;
+    height: 30px;
+    width: 30px; }
+  .login_text {
+    visibility: hidden;
+    font-size: 0em; }
+  .category_select {
+    width: 30%;
+    font-size: 0.6em; }
+  #logo_heading {
+    width: 10%; }
+  #japege {
+    visibility: hidden;
+    font-size: 0;
+    margin: 0; }
+  #j {
+    visibility: visible;
+    position: absolute;
+    left: 10px;
+    top: -5px; }
+  footer .about a {
+    font-size: 1.5em; }
+  .email_signup h2 {
+    font-size: 1.3em; }
+  .social_media img {
+    max-height: 50px;
+    max-width: 30px; } }
+
+@media (max-width: 800px) and (min-width: 673px) {
+  /*Header queries start*/
+  .login_text {
+    font-size: 0.8em; }
+  .category_select {
+    width: 30%;
+    font-size: 0.6em; }
+  #japege {
+    padding-top: 5%;
+    font-size: 1.5em; }
+  footer .about a {
+    font-size: 1.7em; }
+  .email_signup h2 {
+    font-size: 1.5em; }
+  .social_media img {
+    max-height: 60px;
+    max-width: 40px; } }
+
+@media (max-width: 1200px) and (min-width: 901px) {
+  figure.profile_pic figcaption {
+    font-size: 1.5em; } }
+
+@media (max-width: 900px) and (min-width: 701px) {
+  main {
+    margin: 15% 7% 10% 7%; }
+  figure.profile_pic figcaption {
+    font-size: 1.2em; }
+  .profile_nav .profile_info h3 {
+    font-size: 1em; }
+  .profile_nav .profile_info p {
+    font-size: 0.7em; }
+  .profile_nav .profile_info a {
+    font-size: 1em; } }
+
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;
+    align-items: center; }
+    main section.frame {
+      width: 100%;
+      margin-top: 5%; }
+    main nav {
+      width: 100%;
+      margin-top: 15%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      main nav figure.profile_pic {
+        align-self: flex-start;
+        margin-top: 5%;
+        width: 30%; }
+        main nav figure.profile_pic figcaption {
+          font-size: 1em; }
+      main nav .profile_info {
+        width: 65%; }
+  form {
+    font-size: 0.7em; }
+    form #japege_form {
+      flex-direction: column;
+      align-items: center;
+      width: 80%; }
+      form #japege_form .address, form #japege_form .info {
+        width: 100% !important;
+        margin-left: 25%;
+         } }
+
+@media (max-width: 400px) {
+  figure.profile_pic figcaption {
+    font-size: 0.7em !important; } }

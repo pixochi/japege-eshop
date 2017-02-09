@@ -1,0 +1,1 @@
+  <a href="<?php echo base_url('myaccount'); ?>" class="user_button"><img class='user_icon' src="<?php echo base_url('assets/images/public/user_icon.svg'); ?>"><span class="login_text"><?php echo $this->session->customer_name ?></span></a>

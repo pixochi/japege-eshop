@@ -1,0 +1,66 @@
+﻿.my_carousel { position: relative; width: 80%; margin: 0px; background-color: #e6e3e3; margin: 30px auto 20px auto;z-index: 1; height: 50%; }
+
+.carousel_container { height: 100%; margin-right:0px; border:none; }
+#carousel { margin: 0px auto 0px auto; width: 80%; height: 300px; }
+#carousel img { width: 300px; height: 225px; cursor: pointer; transition: 0.5s transform; }
+.nextItem { position: absolute; top: 230px; left: 0px; z-index: 1001; cursor: pointer; }
+.prevItem { position: absolute; top: 230px; right: 0px; z-index: 1002; cursor: pointer; }
+
+/*********************UPRAVIT CAPTION CONTAINER MARGIN TOP PRI NAJMENSOM BREAK POINTE*************************************/
+.caption_container {height:100%; width: 60%; border-left: 3px solid #1a282e; margin: 6% 0 0 28%; padding: 0px 0px 0px 20px; background: #e6e3e3; }
+
+#captions h2 { font-family: Montserrat; font-size: 2.5em; font-weight: normal; margin: 0px 0px 5px 0px; color: black; }
+#captions p { font-family: Montserrat; font-size: 1.3em; color: black; margin: 0px 0px 0px 3px; }
+
+.carousel_data { display: none; }
+
+
+#carousel img:hover {
+
+    transform: rotate(10deg) scale(0.5);
+    
+}
+
+@media (max-width:500px)
+{
+    #carousel 
+    {
+        width: 125%;
+        height: 250px;
+    }
+    #carousel img
+         {
+            width: 150px;
+            height: 117.5px;
+            
+         }
+}
+
+
+@media (max-width:700px) {
+
+   .my_carousel { position: relative; width: 75%; margin: 0px; background-color: #fff; margin: 30px auto 20px auto;background-color: #e6e3e3 }
+.carousel_container { height: 100%;}
+#carousel { width: 110%; height: 300px; margin-bottom:10px; }
+    
+.caption_container { width: 100%; border-left: 3px solid #1a282e; margin: 20px 0px 0px 50px; padding: 0px 0px 0px 20px; }
+#captions h2 {  font-size: 1.3em; font-weight: normal; margin: 0px 0px 5x 0px;}
+#captions p { font-size: 0.8em; color: black; margin: 0px 0px 0px 3px; }
+}
+/*MEDIA QUERY ABY SA PRI NAJVACSOM SCREENE NEZMENSOVALI OBRAZKY KRABIC*/
+@media (min-width:800px){
+     #carousel img:hover {
+        transform: rotate(10deg) scale(1);
+    }
+}
+
+
+@media (max-width:1000px)
+{
+         #carousel img
+         {
+            transform: scale(0.7);
+         }
+}
+
+

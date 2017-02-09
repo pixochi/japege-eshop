@@ -1,0 +1,108 @@
+@media (max-width: 500px)
+{
+	main
+	{
+		padding:20% 15% 15% 15%;
+	}
+
+		.register
+		{
+			padding: 2em 2em 2em 2em;
+		}
+/*Footer queries start*/
+
+footer .about
+	{
+		flex-direction: column;
+	}
+
+		footer .about a
+		{
+			font-size: 1.2em;
+			padding-top: 10%;
+			padding-left: 30%;
+		}
+
+		.email_signup h2
+		{
+			padding-top: 5%;
+			font-size: 1.1em;
+		}
+
+			.social_media a
+			{
+				padding-top: 20%;
+			}
+
+			.social_media img
+			{	
+				max-height: 30px;
+				max-width: 30px;
+				margin-left: 0%;
+			}
+
+		/*Footer queries end*/
+
+}
+
+
+@media (max-width: 672px) and (min-width: 501px)
+{
+	main
+	{
+		padding:15% 20% 15% 20%;
+	}
+
+		.register
+		{
+			padding: 2em 3em 3em 3em;
+		}
+
+/*Footer queries start*/
+footer .about a
+	{
+		font-size: 1.5em;
+	}
+
+	.email_signup h2
+	{
+		font-size: 1.3em;
+	}
+
+		.social_media img
+		{
+			max-height: 50px;
+			max-width: 30px;
+		}
+}
+@media (max-width: 800px )and (min-width: 673px)
+{
+	main
+	{
+		padding:15% 20% 15% 20%;
+	}
+
+		.register
+		{
+			padding: 2em 3em 3em 3em;
+		}
+
+
+/*Footer queries start*/
+footer .about a
+	{
+		font-size: 1.7em;
+	}
+
+	.email_signup h2
+	{
+		font-size: 1.5em;
+	}
+
+		.social_media img
+		{
+			max-height: 60px;
+			max-width: 40px;
+		}
+
+}

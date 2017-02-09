@@ -1,0 +1,299 @@
+﻿/* header */
+
+body {
+	position: relative;
+	padding-bottom: 70px;
+
+}
+
+.container
+{
+	margin: 0;
+}
+
+.titlelogo
+{
+	background: #0CCAD6;
+}
+
+p.logo
+{
+	padding-left: 50px;
+	padding-top: 10px;
+	color: white;
+	font-size: 4em;
+	
+}
+
+header {
+    background-color: rgb(0,184,161);
+    height: 80px;
+}
+
+#logo {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.content {
+    height: 100%;
+}
+
+#login_content {
+    height: 100%;
+    background-color: rgb(0,184,161);
+}
+
+.login_form {
+    border-color: black;
+    position: absolute;
+    top: 15vh;
+}
+
+    .login_form h1 {
+        color: white;
+        font-weight: bold;
+    }
+
+.login_btn {
+    /*background-color: rgb(40,194,201);*/
+    background-color: rgb(153,196,50);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    .login_btn:hover {
+        background-color: #3eb002;
+    }
+
+.login_form form input {
+    margin-top: 7px;
+    height: 40px;
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+    .login_form form input[type="text"],
+    .login_form form input[type="password"] {
+        /*background-color: #eaeaea;*/
+        background-color: white;
+    }
+
+#login_message {
+    margin-top: 150px;
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+/* navigation */
+#admin_nav {
+    background-color: rgb(52,73,94);
+    height: 100%;
+}
+
+    #admin_nav .selected {
+        font-weight: bold;
+        background-color:darkgray;
+    }
+
+    #admin_nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #admin_nav ul li {
+           /*margin-top:5px;*/
+        }
+
+        #admin_nav ul li a {
+            color: white;
+            
+
+        }
+
+.icon {
+    background-position: 0 20px !important;
+    display: inline-block;
+    width: 30px;
+    height: 45px;
+}
+
+.icon-product {
+    background: url('../images/admin_area/icon_product.png') no-repeat top left;
+}
+
+.icon-order{
+    background: url('../images/admin_area/icon_order.png') no-repeat top left;
+}
+
+.icon-admin{
+    background: url('../images/admin_area/icon_admin.png') no-repeat top left;
+}
+
+.icon-customer{
+    background: url('../images/admin_area/icon_customer.png') no-repeat top left;
+}
+
+.icon-super-admin{
+    background: url('../images/admin_area/icon_super_admin.png') no-repeat top left;
+}
+
+/* navigation */
+
+/* buttons over the table */
+.row h2{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.button_row{
+	background: #f5f5ef;
+	border-bottom: 4px solid #ebebe0;
+	
+}
+.btn-primary.active {
+	background: #3FC063;
+	border: none;
+	position: absolute;
+	right: 0;
+	display: block;
+	margin: 5px 45px 5px 0px;
+	height: 50px;
+
+	box-shadow: 2px 2px #2c8746;
+}
+.btn-primary.active:hover {
+	background: #2c8746;
+	border: none;
+}
+/* buttons over the table */
+
+#admin_content{
+    position:absolute;
+    top:80px;
+    left:180px;
+    padding:0;
+}
+
+#admin_content ul {
+    list-style-type:none;
+    clear:both;
+    
+}
+
+#admin_content ul li{
+    text-decoration:none;
+    
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    left:0;
+    bottom: 0;
+    height: 60px;
+    background-color: rgb(41,45,53);
+    text-align: center;
+    color: white;
+}
+
+.admin-table{
+    text-align:center;
+}
+
+.admin-table th{
+    text-align:center;
+}
+
+#products_table tr{
+    border-bottom: 1px solid #d9d9d9;
+
+}
+
+#products_table td{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+#add_product_form{
+    background-color:gray;
+}
+/*SORTING TABLE*/
+
+/* table */
+#products_table
+{
+	width: 100%;
+	padding: 0;
+	margin-top: 20px;
+}
+
+table th {
+	background: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+
+}
+
+table td{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.1em;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color:rgba(66, 209, 209, 0.1); 
+ }
+
+/* table */
+
+th.sorted {
+    background-color: #ffd700;
+}
+
+    th.sorted::after {
+        margin-left: 4px;
+    }
+
+    th.sorted.asc:after {
+        content: '\25BC';
+    }
+
+    th.sorted.desc:after {
+        content: '\25B2';
+    }
+/*SORTING TABLE END*/
+
+/* footer */
+.footer
+{
+	background-color: rgb(41,45,53);
+	color: white;
+	text-align: center;	 
+
+}
+
+span.footer
+{
+	text-align: center;
+}
+
+/* footer */
+
+
+
+.container-fluid
+{
+	padding:0;}
+
+	#admin_content{
+		padding-right: 0;
+	}

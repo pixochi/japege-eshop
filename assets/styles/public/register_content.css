@@ -1,0 +1,38 @@
+main
+{
+	padding:15% 30% 15% 30%;
+	
+}
+
+	.register
+	{
+		background: #1a282e;
+		padding: 2em 5em 5em 5em;
+		color: white;
+	}
+
+.has-success input{
+border: 3px solid #3c763d !important;
+}
+
+.has-error input{
+border: 3px solid #a94442 !important;
+}
+			.error
+			{
+				color: #ff3e3a;
+			}
+			
+
+			.register h2
+			{
+				padding-bottom: 0.5em;
+			}
+
+				.register #InputSubmit
+				{
+					margin-top: 2em;
+				}
+
+
+		

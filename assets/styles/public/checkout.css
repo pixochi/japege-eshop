@@ -1,0 +1,433 @@
+
+/*--------------------------------------------------------------
+Typography header:#1a282e; background:#e6e3e3; orange #F68619 footer:223842;
+--------------------------------------------------------------*/
+h2, h3, h4, h5, body, b {
+  color: white;
+  font-family: Montserrat; }
+
+body {
+  background: #e6e3e3;
+  color: black; }
+
+header {
+  background: #1a282e; }
+
+footer {
+  background: #223842; }
+
+main {
+  margin: 8% 5% 8% 5%;
+  display: flex;
+  justify-content: space-between; }
+  main nav {
+    width: 23%;
+    background: #1a282e;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  main section.frame {
+    width: 75%;
+    padding: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #1a282e;
+    justify-content: center; }
+
+figure.profile_pic {
+  position: relative; }
+  figure.profile_pic img {
+    width: 100%;
+    height: auto; }
+  figure.profile_pic figcaption {
+    position: absolute;
+    bottom: 0;
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    text-align: center;
+    width: 100%; }
+
+.profile_nav .profile_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .profile_nav .profile_info h3 {
+    margin: 0;
+    padding: 0.5em 0 0 0; }
+  .profile_nav .profile_info p {
+    padding: 0.8em;
+    padding-bottom: 10%;
+    color: white;
+    font-size: 0.8em;
+    text-align: justify; }
+  .profile_nav .profile_info a {
+    width: 60%;
+    display: block;
+    text-align: center;
+    background: orange;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: white;
+    border-radius: 10px; }
+    .profile_nav .profile_info a:hover {
+      background: #FA8E24;
+      text-decoration: none; }
+
+section.frame {
+  display: flex;
+  justify-content: center; }
+  section.frame form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2%;
+    color: white; }
+    section.frame form h2 {
+      padding-bottom: 1em; }
+    section.frame form #japege_form {
+      display: flex;
+      justify-content: space-between; }
+      section.frame form #japege_form .info {
+        width: 45%; }
+      section.frame form #japege_form .address {
+        display: flex;
+        flex-direction: column;
+        width: 45%; }
+        section.frame form #japege_form .address button {
+          align-self: center; }
+
+
+.login_redirect {
+  display: block;
+  padding: 0.4em;
+  font-size: 1.3em;
+  color: black;
+  border-radius: 7px;
+  margin-bottom: 1%;
+  width: 30%;
+  background-color: orange;
+  color: white;
+}
+  .login_redirect:hover{
+    color: white;
+  }
+
+.btn {
+  background-color: orange;
+  color: white;
+} 
+  .btn:hover
+  {
+    color: white;
+    background-color: orange;
+    text-decoration: underline;
+  }
+
+@media (max-width: 500px) {
+  /*Header queries start*/
+  .category_select {
+    width: 30%;
+    font-size: 0.7em; }
+  #logo_heading {
+    width: 10%; }
+  #japege {
+    visibility: hidden;
+    font-size: 0;
+    margin: 0; }
+  #j {
+    visibility: visible;
+    position: absolute;
+    left: 10px;
+    top: -5px; }
+  footer .about {
+    flex-direction: column; }
+  footer .about a {
+    font-size: 1.2em;
+    padding-top: 10%;
+    padding-left: 30%; }
+  .email_signup h2 {
+    padding-top: 5%;
+    font-size: 1.1em; }
+  .social_media a {
+    padding-top: 20%; }
+  .social_media img {
+    max-height: 30px;
+    max-width: 30px;
+    margin-left: 0%; }
+
+    .login_redirect {
+      width: 100%;
+      } }
+
+@media (max-width: 672px) and (min-width: 501px) {
+  /*Header queries start*/
+  .category_select {
+    width: 30%;
+    font-size: 0.6em; }
+  #logo_heading {
+    width: 10%; }
+  #japege {
+    visibility: hidden;
+    font-size: 0;
+    margin: 0; }
+  #j {
+    visibility: visible;
+    position: absolute;
+    left: 10px;
+    top: -5px; }
+  footer .about a {
+    font-size: 1.5em; }
+  .email_signup h2 {
+    font-size: 1.3em; }
+  .social_media img {
+    max-height: 50px;
+    max-width: 30px; } }
+
+@media (max-width: 800px) and (min-width: 673px) {
+  /*Header queries start*/
+
+  .category_select {
+    width: 30%;
+    font-size: 0.6em; }
+  #japege {
+    padding-top: 5%;
+    font-size: 1.5em; }
+  footer .about a {
+    font-size: 1.7em; }
+  .email_signup h2 {
+    font-size: 1.5em; }
+  .social_media img {
+    max-height: 60px;
+    max-width: 40px; } }
+
+@media (max-width: 1200px) and (min-width: 901px) {
+  figure.profile_pic figcaption {
+    font-size: 1.5em; } }
+
+@media (max-width: 900px) and (min-width: 701px) {
+  main {
+    margin: 15% 7% 10% 7%; }
+  figure.profile_pic figcaption {
+    font-size: 1.2em; }
+  .profile_nav .profile_info h3 {
+    font-size: 1em; }
+  .profile_nav .profile_info p {
+    font-size: 0.7em; }
+  .profile_nav .profile_info a {
+    font-size: 1em; } }
+
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;
+    align-items: center; }
+    main section.frame {
+      width: 100%;
+      margin-top: 5%; }
+    main nav {
+      width: 100%;
+      margin-top: 15%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      main nav figure.profile_pic {
+        align-self: flex-start;
+        margin-top: 5%;
+        width: 30%; }
+        main nav figure.profile_pic figcaption {
+          font-size: 1em; }
+      main nav .profile_info {
+        width: 65%; }
+  form {
+    font-size: 0.7em; }
+    form #japege_form {
+      flex-direction: column;
+      align-items: center; }
+      form #japege_form .info, form #japege_form .address {
+        width: 100% !important; } }
+
+@media (max-width: 400px) {
+  figure.profile_pic figcaption {
+    font-size: 0.7em !important; } }
+
+main section.frame {
+  width: 100%;
+  background: white;
+  color: black;
+  padding-top: 2%; }
+  main section.frame form {
+    color: black; }
+    main section.frame form h3 {
+      color: black;
+      margin: 0;
+      padding-bottom: 2%; }
+    main section.frame form button {
+      font-size: 2em;
+      margin-left: auto; }
+
+#review {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  #review h2 {
+    padding-bottom: 3%;
+    color: black;
+    font-size: 3em; }
+  #review article {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    #review article .checkout_row {
+      display: flex;
+      justify-content: space_between;
+      border-bottom: 1px solid black; }
+      #review article .checkout_row .p_name_heading, #review article .checkout_row .p_quantity_heading, #review article .checkout_row .p_price_heading {
+        font-family: 'Russo One';
+        font-size: 1.4em; }
+      #review article .checkout_row .p_name, #review article .checkout_row .p_name_heading {
+        width: 50%; }
+      #review article .checkout_row .p_quantity, #review article .checkout_row .p_quantity_heading {
+        width: 20%; }
+      #review article .checkout_row .p_price, #review article .checkout_row .p_price_heading {
+        width: 30%; }
+      #review article .checkout_row .p_name, #review article .checkout_row .p_quantity, #review article .checkout_row .p_price {
+        padding: 0.5% 0.5% 0.5% 0; }
+    #review article .p_total {
+      margin-left: auto;
+      font-size: 2em;
+      font-family: 'Russo One'; }
+
+@media (max-width: 500px) {
+  /*Header queries start*/
+  .category_select {
+    width: 30%;
+    font-size: 0.7em; }
+  #logo_heading {
+    width: 10%; }
+  #japege {
+    visibility: hidden;
+    font-size: 0;
+    margin: 0; }
+  #j {
+    visibility: visible;
+    position: absolute;
+    left: 10px;
+    top: -5px; }
+  footer .about {
+    flex-direction: column; }
+  footer .about a {
+    font-size: 1.2em;
+    padding-top: 10%;
+    padding-left: 30%; }
+  .email_signup h2 {
+    padding-top: 5%;
+    font-size: 1.1em; }
+  .social_media a {
+    padding-top: 20%; }
+  .social_media img {
+    max-height: 30px;
+    max-width: 30px;
+    margin-left: 0%; } }
+
+@media (max-width: 672px) and (min-width: 501px) {
+  /*Header queries start*/
+  .category_select {
+    width: 30%;
+    font-size: 0.6em; }
+  #logo_heading {
+    width: 10%; }
+  #japege {
+    visibility: hidden;
+    font-size: 0;
+    margin: 0; }
+  #j {
+    visibility: visible;
+    position: absolute;
+    left: 10px;
+    top: -5px; }
+  footer .about a {
+    font-size: 1.5em; }
+  .email_signup h2 {
+    font-size: 1.3em; }
+  .social_media img {
+    max-height: 50px;
+    max-width: 30px; } }
+
+@media (max-width: 800px) and (min-width: 673px) {
+  /*Header queries start*/
+  .category_select {
+    width: 30%;
+    font-size: 0.6em; }
+  #japege {
+    padding-top: 5%;
+    font-size: 1.5em; }
+  footer .about a {
+    font-size: 1.7em; }
+  .email_signup h2 {
+    font-size: 1.5em; }
+  .social_media img {
+    max-height: 60px;
+    max-width: 40px; } }
+
+@media (max-width: 1200px) and (min-width: 901px) {
+  figure.profile_pic figcaption {
+    font-size: 1.5em; } }
+
+@media (max-width: 900px) and (min-width: 701px) {
+  main {
+    margin: 15% 7% 10% 7%; }
+  figure.profile_pic figcaption {
+    font-size: 1.2em; }
+  .profile_nav .profile_info h3 {
+    font-size: 1em; }
+  .profile_nav .profile_info p {
+    font-size: 0.7em; }
+  .profile_nav .profile_info a {
+    font-size: 1em; } }
+
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;
+    align-items: center; }
+    main section.frame {
+      width: 100%;
+      margin-top: 5%; }
+    main nav {
+      width: 100%;
+      margin-top: 15%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      main nav figure.profile_pic {
+        align-self: flex-start;
+        margin-top: 5%;
+        width: 30%; }
+        main nav figure.profile_pic figcaption {
+          font-size: 1em; }
+      main nav .profile_info {
+        width: 65%; }
+  form {
+    font-size: 0.7em; }
+    form #japege_form {
+      flex-direction: column;
+      align-items: center; }
+      form #japege_form .info, form #japege_form .address {
+        width: 100% !important; } }
+
+@media (max-width: 400px) {
+  figure.profile_pic figcaption {
+    font-size: 0.7em !important; } }
+
+@media (max-width: 700px) {
+  .checkout_row .p_name_heading, .checkout_row .p_quantity_heading, .checkout_row .p_price_heading {
+    font-size: 1em !important; }
+  h3 {
+    font-size: 1.7em; } }
+
+@media (max-width: 400px) {
+  .checkout_row .p_name_heading, .checkout_row .p_quantity_heading, .checkout_row .p_price_heading {
+    font-size: 0.7em !important; }
+  h2 {
+    font-size: 2.5em !important; }
+  #review {
+    margin-bottom: 5%; } }

@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+Typography header:#1a282e; background:#e6e3e3; orange #F68619 footer:223842;
+--------------------------------------------------------------*/
+h2,h3,h4,h5,body,b
+{
+	color:white;
+	font-family: Montserrat;
+}
+
+body
+{
+	background: #e6e3e3;
+	color: black;
+	
+}
+
+header
+{
+	background: #1a282e;
+}
+
+footer
+{
+	background: #223842;
+}
+
+
+
+

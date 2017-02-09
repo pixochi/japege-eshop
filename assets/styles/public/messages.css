@@ -1,0 +1,267 @@
+/*--------------------------------------------------------------
+Typography header:#1a282e; background:#e6e3e3; orange #F68619 footer:223842;
+--------------------------------------------------------------*/
+h2, h3, h4, h5, body, b {
+  color: white;
+  font-family: Montserrat; }
+
+body {
+  background: #e6e3e3;
+  color: black; }
+
+header {
+  background: #1a282e; }
+
+footer {
+  background: #223842; }
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  position: relative; }
+  .chat header {
+    display: flex;
+    margin-bottom: 1em;
+    align-items: center; }
+    .chat header h3 {
+      margin: 0;
+      font-size: 1em;
+      padding: 4% 0% 4% 1em;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: block; }
+      .chat header h3 a {
+        color: orange; }
+      .chat header h3 img {
+        height: 3em;
+        width: 3em;
+        border-radius: 50%; }
+
+.messages {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: block;
+  position: relative;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  max-height: 80vh; }
+  .messages figure:last-child {
+    margin-bottom: 1em; }
+
+.sent_message, .received_message {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  margin-left: 3%;
+  margin-bottom: 0.5%;
+  background: #E9E9E9; }
+
+.received_message {
+  margin-left: auto;
+  margin-right: 3%;
+  background: #D6F8F9; }
+
+.sent_message, .received_message,
+.received_message {
+  border-radius: 7px;
+  padding: 2%;
+  overflow-wrap: break-word;
+  word-wrap: break-word; }
+  .sent_message figcaption, .received_message figcaption,
+  .received_message figcaption {
+    font-style: italic;
+    font-weight: lighter;
+    color: #606060; }
+
+.send_msg {
+  width: 100%;
+  margin-top: auto;
+  background: #1a282e;
+  padding: 1em;
+  display: flex;
+  align-items: center; }
+  .send_msg textarea {
+    width: 80%;
+    margin: 1em 0 1em 0; }
+  .send_msg button {
+    background: transparent;
+    color: white;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin-left: 2em;
+    display: flex;
+    justify-content: center;
+    border: 2px solid white; }
+    .send_msg button:hover {
+      background: orange; }
+    .send_msg button span.glyphicon {
+      margin-left: -12%; }
+
+    #load_older_messages{
+      padding-left: 40%;
+      font-size: 1.2em;
+      color:blue;
+      cursor: pointer;
+    }
+
+main {
+  margin: 8% 5% 8% 5%;
+  display: flex;
+  justify-content: space-between; }
+  main nav {
+    width: 23%;
+    background: #1a282e;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  main section.frame {
+    width: 75%;
+    display: flex;
+    background: white; }
+
+figure.profile_pic {
+  position: relative; }
+  figure.profile_pic img {
+    width: 100%;
+    height: auto; }
+  figure.profile_pic figcaption {
+    position: absolute;
+    bottom: 0;
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    color: white; }
+
+.profile_nav .profile_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .profile_nav .profile_info h3 {
+    margin: 0;
+    padding: 0.5em 0 0 0; }
+  .profile_nav .profile_info p {
+    padding: 0.8em;
+    padding-bottom: 10%;
+    color: white;
+    font-size: 0.8em;
+    text-align: justify; }
+  .profile_nav .profile_info a {
+    width: 60%;
+    display: block;
+    text-align: center;
+    background: orange;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: white;
+    border-radius: 10px; }
+    .profile_nav .profile_info a:hover {
+      background: #FA8E24;
+      text-decoration: none; }
+
+.frame {
+  position: relative; }
+  .frame nav {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll; }
+    .frame nav #inbox_units{
+      width: 100%;
+    }
+    .frame nav .badge {
+      background: #FF530D; }
+    .frame nav header h2 {
+      margin: 1em 0 1em 0;
+      width: 100%;
+      text-align: center; }
+    .frame nav figure {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      background: #223842;
+      padding-top: 5%;
+      padding-bottom: 5%; }
+      .frame nav figure:hover, .selected_inbox{
+        cursor: pointer;
+        background: #FFBE46 !important; }
+      .frame nav figure img {
+        height: 3em;
+        width: 3em;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 2%; }
+      .frame nav figure figcaption {
+        color: white;
+        max-width: 50%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .frame nav figure .badge {
+        margin-left: auto;
+        margin-right: 5%; }
+
+@media (max-width: 900px) {
+  .frame {
+    flex-direction: column !important; }
+    .frame nav {
+      width: 100%;
+      max-height: 40vh; }
+    .frame .chat {
+      width: 100%; } }
+
+@media (max-width: 500px) {
+  .frame nav figure {
+    padding-top: 9%;
+    padding-bottom: 9%; } }
+
+@media (max-width: 1200px) and (min-width: 901px) {
+  figure.profile_pic figcaption {
+    font-size: 1.5em; } }
+
+@media (max-width: 900px) and (min-width: 701px) {
+  main {
+    margin: 15% 7% 10% 7%; }
+  figure.profile_pic figcaption {
+    font-size: 1.2em; }
+  .profile_nav .profile_info h3 {
+    font-size: 1em; }
+  .profile_nav .profile_info p {
+    font-size: 0.7em; }
+  .profile_nav .profile_info a {
+    font-size: 1em; } }
+
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;
+    align-items: center; }
+    main section.frame {
+      width: 100%;
+      margin-top: 5%; }
+    main nav {
+      width: 100%;
+      margin-top: 15%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      main nav figure.profile_pic {
+        align-self: flex-start;
+        margin-top: 5%;
+        width: 30%; }
+        main nav figure.profile_pic figcaption {
+          font-size: 1em; }
+      main nav .profile_info {
+        width: 65%; }
+    main .frame nav {
+      margin-top: 0;
+      display: flex;
+      flex-direction: column; } }
+
+@media (max-width: 400px) {
+  figure.profile_pic figcaption {
+    font-size: 0.7em !important; } }

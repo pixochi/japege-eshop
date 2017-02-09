@@ -1,0 +1,195 @@
+/*Queries start*/
+
+@media (max-width: 500px)
+{
+	/*footer queries start*/
+
+	footer .about
+		{
+			flex-direction: column;
+		}
+
+		footer .about a
+		{
+			font-size: 1.2em;
+			padding-top: 10%;
+			padding-left: 30%;
+		}
+
+		.email_signup h2
+		{
+			padding-top: 5%;
+			font-size: 1.1em;
+		}
+
+			.social_media a
+			{
+				padding-top: 20%;
+			}
+
+			.social_media img
+			{	
+				max-height: 30px;
+				max-width: 30px;
+				margin-left: 0%;
+			}
+
+		/*footer queries end*/
+
+	/*Content queries start*/
+
+	.content
+	{
+		padding-top: 23%;
+	}
+
+	.filters .search_bar
+		{	
+			margin-left: 0;
+			width: 100%;
+		}
+
+	.toggle-button
+	{
+		font-size: 0.8em;
+	}
+
+		.product_list>a
+	{
+		width:100%; 
+		margin-bottom: 5%;
+	}
+
+	.pagination>span
+	{
+		display: none;
+	}
+
+	.pagination .page_btn,.pagination>b
+	{
+		width: 6%;
+	}
+
+	
+
+	/*Content queries end*/
+
+}
+
+
+
+@media (max-width: 672px) and (min-width: 501px)
+{
+	/*Footer queries start*/
+
+
+	
+	footer .about a
+		{
+			font-size: 1.5em;
+		}
+
+		.email_signup h2
+		{
+			font-size: 1.3em;
+		}
+
+		.social_media img
+		{
+			max-height: 50px;
+			max-width: 30px;
+		}
+
+	/*Footer queries end*/
+
+	/*Content queries start*/
+
+	.content
+	{
+		padding-top: 17%;
+	}
+
+		.filters .search_bar
+			{	
+				margin-left: 0;
+				width: 50%;
+			}
+
+		.product_list>a
+	{
+		width: 48%; 
+	}
+
+	.pagination>span
+	{
+		display: none;
+	}
+
+	.pagination .page_btn,.pagination>b
+	{
+		width: 6%;
+	}
+
+
+	
+
+	/*Content queries end*/
+}
+
+
+@media (max-width: 800px )and (min-width: 673px)
+{
+	
+	/*Footer queries start*/
+
+	footer .about a
+	{
+		font-size: 1.7em;
+	}
+
+		.email_signup h2
+		{
+			font-size: 1.5em;
+		}
+
+		.social_media img
+		{
+			max-height: 60px;
+			max-width: 40px;
+	}
+
+	/*Footer queries end*/
+
+	/*Content queries start*/
+
+	.content
+	{
+		padding-top: 14%;
+	}
+
+	.product_list>a
+	{
+		width: 48%; 
+	}
+	.pagination .page_btn,.pagination>b
+	{
+		width: 6%;
+	}
+
+		
+
+	/*Content queries end*/
+
+
+}
+
+
+/*Queries end*/
+
+@media (max-width: 1000px ) and (min-width: 801px)
+{
+	.product_list>a
+	{
+		width: 32%; 
+	}
+}

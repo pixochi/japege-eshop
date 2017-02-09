@@ -1,0 +1,30 @@
+.four {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
+  .four h1 {
+    font-size: 10em; }
+  .four img {
+    width: 100%;
+    height: auto;
+    margin-left: 10%; }
+  .four a {
+    display: block;
+    background: white;
+    border-radius: 7px;
+    width: auto;
+    text-align: center;
+    padding: 0.3em;
+    font-size: 1.5em;
+    color: black; }
+
+
+
+@media (max-width: 800px) {
+  .four {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+    .four img {
+      width: 60%;
+      margin-top: 2em; } }

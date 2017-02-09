@@ -1,0 +1,217 @@
+
+/*Sidebar navigation start*/
+body
+{
+	position: relative;
+}
+.sidebar_navigation
+{
+	position: fixed;
+	right: 20px;
+	top: 15%;
+	height: 70%;
+	width: 4%;
+	background: transparent;
+}	
+
+
+.sidebar_categories
+{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	/*justify-content-content: space-around;*/
+	height: 100%;
+}
+
+.sidebar_categories a{
+	display: block;
+	height: 100%;
+	padding-top: 10px;
+	transition: all 0.2s;
+
+
+}
+
+.sidebar_categories a:hover{
+	transform: scale(0.9);
+}
+
+
+.sidebar_categories a.active
+{
+	transform: scale(0.9);
+	transform: translateX(-10px);
+}
+
+.sidebar_categories image{
+	vertical-align: middle;
+}
+
+
+/*Sidebar navigation end*/
+
+
+/*Content start*/
+
+.content
+{
+	padding-top: 8%; /*padding so header does not cover content*/
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+	/*background-size: cover; *//*so the background always covers all the content*/
+	width: 94%;
+	padding-right: 5%;
+}
+
+
+
+
+	/*Category layout start*/
+	#carousel_special_offers
+	{
+		height: 100%;
+		width: 100%;
+		
+	}
+
+	.caption_container{
+overflow: scroll !important;
+overflow-x: hidden !important;
+}
+
+	
+
+	.category_title{
+		margin-top: 10%;
+	}
+
+	.category_title h2
+	{
+		padding-left: 5%;
+		color: black;
+		font-weight: bold;
+		font-family: 'Russo One';
+	}
+
+	.category_row
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 95%;
+		justify-content: space-around;
+		margin-left: 4%;
+	}
+
+		.category_row a
+		{
+			display: flex;
+			flex-direction: column;
+			width: 31%;
+			background:white;
+			/*border: 2px solid black;*/
+		}
+
+		a article
+			{
+				display: flex;
+				flex-direction: column;
+				margin-top: auto;
+			}
+
+			a article figure {
+
+				position: relative;
+			}
+
+				#discount {
+					position: absolute;
+					top: 30px;
+					right: 10px;
+					color: white;
+					transform: rotate(30deg);
+					background: red;
+					text-align: center;
+					display: block;
+					width: 20%;
+					font-size: 1.1em;
+					padding: 3px;
+				}
+
+
+				.high_discount {
+/*					position: absolute;
+					top: 0;
+					right: 0;*/
+					color: white;
+					/*transform: rotate(30deg);*/
+					background: red;
+					text-align: center;
+					display: block;
+					width: 20%;
+					font-size: 0.8em;
+					padding: 3px;
+				}
+
+				.high_discount_description{
+					  display: block;
+					  display: -webkit-box;
+					  /*max-width: 400px;*/
+					  height: $font-size*$line-height*$lines-to-show;
+					  margin: 0 auto;
+					  font-size: $font-size;
+					  line-height: $line-height;
+					  -webkit-line-clamp: $lines-to-show;
+					  -webkit-box-orient: vertical;
+					  overflow: hidden;
+					  text-overflow: ellipsis;
+				}
+
+			a article img
+			{
+				width: 100%;
+				height: auto;
+			}
+				article figcaption
+				{	
+	    			font-size:3rem;
+	    			color: black;
+	    			text-align: center;
+	    			padding: 0.5em;
+	    			font-family: 'Russo One';
+	    			font-weight: bold;
+				}
+
+				article button
+				{
+					justify-content: center;
+					background: orange;
+					color: white;
+					font-size: 2em;
+					border:none;
+					flex-grow: 1;
+				}
+
+					article button:hover
+					{
+						background:#FA8E24;
+						color: black;
+					}
+
+				.category_row a:hover
+				{
+					transition: all 0.3s;
+					text-decoration: none;
+					transform: scale(1.01);
+					box-shadow: 7px 7px 5px rgba(0,0,0,0.3);
+				}
+
+	
+	/*Category layout end*/
+
+
+

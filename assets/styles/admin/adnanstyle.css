@@ -1,0 +1,360 @@
+/*header */
+body {
+    position: relative;
+    padding-bottom: 0px;
+    overflow-x: hidden;
+}
+
+.titlelogo {
+    background: rgb(0,184,161);
+}
+
+#logo {
+    font-weight: bold;
+}
+
+p.logo {
+    padding-left: 50px;
+    padding-top: 10px;
+    color: white;
+    font-size: 4em;
+}
+/* header END*/
+
+body {
+    position: relative;
+    /*padding-bottom: 70px;*/
+}
+
+.container {
+    margin: 0;
+}
+
+/* admin login start */
+#login_content {
+    height: 95vh;
+    background-color: rgb(0,184,161);
+}
+
+.login_form {
+    border-color: black;
+    position: absolute;
+    top: 15vh;
+}
+
+    .login_form h1 {
+        color: white;
+        font-weight: bold;
+    }
+
+.login_btn {
+    /*background-color: rgb(40,194,201);*/
+    background-color: rgb(153,196,50);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    .login_btn:hover {
+        background-color: #3eb002;
+    }
+
+.login_form form input {
+    margin-top: 7px;
+    height: 40px;
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+    .login_form form input[type="text"],
+    .login_form form input[type="password"] {
+        background-color: white;
+    }
+
+#login_message {
+    margin-top: 150px;
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* admin login end */
+
+
+
+/* navigation start */
+.col {
+    background-color: rgb(52,73,94);
+    min-height: 800px;
+    height: auto !important;
+    height: 800px;
+    padding-right: 0;
+}
+
+
+
+
+.icon-arrow {
+    display: inline-block;
+    background-repeat: no-repeat;
+    height: 50px;
+    position: relative;
+    top: 0;
+    width: 64px;
+    background-image: url('../images/admin/icon_arrow_back.png');
+}
+
+footer{
+    height: 20vh !important;
+}
+
+@media screen and (max-width: 750px) and (min-width: 0px) {
+    .col {
+        height: 1250px;
+        min-height: 1250px;
+    }
+}
+
+#admin_nav {
+    background-color: rgb(52,73,94);
+    height: 100%;
+    padding-right: 0;
+    height: 100vh;
+}
+
+    #admin_nav .selected {
+        font-weight: bold;
+        background-color: darkgray;
+    }
+
+    #admin_nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        #admin_nav ul li {
+            padding-left: 20px;
+        }
+
+            #admin_nav ul li a {
+                color: white;
+            }
+
+.icon {
+    background-position: 0 20px !important;
+    display: inline-block;
+    width: 30px;
+    height: 45px;
+}
+
+.icon-product {
+    background: url('../images/admin/icon_product.png') no-repeat top left;
+}
+
+.icon-order {
+    background: url('../images/admin/icon_order.png') no-repeat top left;
+}
+
+.icon-admin {
+    background: url('../images/admin/icon_admin.png') no-repeat top left;
+}
+
+.icon-customer {
+    background: url('../images/admin/icon_customer.png') no-repeat top left;
+}
+
+.icon-super-admin {
+    background: url('../images/admin/icon_super_admin.png') no-repeat top left;
+}
+
+/* navigation end */
+
+/* buttons over the table */
+.back_button {
+    background: transparent;
+    border: none;
+    width: 65px !important;
+    margin-right: 0;
+}
+
+.row h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button_row {
+    background: #f5f5ef;
+    border-bottom: 4px solid #ebebe0;
+    margin: 0;
+}
+
+.btn-primary.active {
+    background: #3FC063;
+    border: none;
+    position: absolute;
+    right: 0;
+    display: block;
+    margin: 5px 45px 5px 0px;
+    height: 50px;
+    box-shadow: 2px 2px #2c8746;
+}
+
+    .btn-primary.active:hover {
+        background: #2c8746;
+        border: none;
+    }
+
+#delete_btn {
+    background-color: #fa4949;
+    margin-left: 0;
+    margin-right: 155px;
+    margin-top:0;
+     box-shadow: 2px 2px #e52e2e;
+}
+#delete_btn:hover{
+    background-color:#e01c1c;
+}
+
+#add_product_btn {
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+    #add_product_btn span {
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+/* buttons over the table */
+
+/* add and edit product form start*/
+/*form start*/
+
+#product_form {
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+#add_product_form {
+    padding-left: 25px;
+}
+
+
+.form_col1 {
+    margin-bottom: 10px;
+}
+
+.form_col2 {
+    margin-bottom: 50px;
+}
+
+label.control-label {
+    padding-top: 5px;
+}
+
+span .glyphicon {
+    padding-left: 20px;
+}
+
+.btn-primary.btn-lg {
+    background: #3FC063;
+    border: none;
+    margin: 15px 10px 10px 80px;
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    box-shadow: 2px 2px #2c8746;
+}
+
+    .btn-primary.btn-lg:hover {
+        background: #2c8746;
+        border: none;
+    }
+
+
+
+.productimg {
+    margin-top: 30px;
+}
+
+label, input {
+    font-family: 'Open Sans', sans-serif;
+}
+/*form end*/
+
+/* add and edit product form end */
+
+/* table start*/
+#products_table {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+    height: 100%;
+    background: white;
+}
+
+table th {
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+th.headerSortUp, .headerSortDown {
+    background-color: #ffd700;
+}
+
+th.header::after {
+    margin-left: 4px;
+}
+
+th.headerSortDown:after {
+    content: '\25BC';
+}
+
+th.headerSortDown:after {
+    content: '\25B2';
+}
+
+table td {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+    background-color: rgba(66, 209, 209, 0.1);
+}
+
+
+
+/* table end */
+
+/* footer start */
+.footer {
+    background-color: rgb(41,45,53);
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+
+span.footer {
+    text-align: center;
+}
+
+/* footer end */
+
+
+
+.container-fluid {
+    padding: 0;
+}
+
+#admin_content {
+    padding-right: 0;
+    padding-left: 0;
+}

@@ -1,0 +1,162 @@
+body {
+  background: #e6e3e3; }
+
+h1, h2, h3, h4, h5, h6, p, a, figcaption, span, button {
+  font-family: Montserrat, sans-serif;
+  color: black; }
+
+.flexbox {
+  display: flex;
+  flex-direction: column; }
+
+.main_header {
+  background: #1a282e;
+  display: flex; }
+  .main_header h1 {
+    color: white;
+    font-family: "Bungee Inline";
+    margin: 0;
+    padding: 1%;
+    width: 20%;
+    font-size: 3rem; }
+  .main_header .mobile_title {
+    display: none; }
+
+nav {
+  display: flex;
+  width: 80%; }
+  nav a {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    transition: background 0.25s ease-in; }
+     nav a:hover, nav a:focus,.selected_nav {
+      background: orange;
+      text-decoration: none;
+      color: white; }
+
+@media (max-width: 900px) and (min-width: 601px) {
+  .main_header h1 {
+    width: 25%; }
+  nav {
+    width: 75%; }
+    nav a {
+      font-size: 1.6rem; } }
+
+@media (max-width: 600px) {
+  .main_header h1 {
+    width: 0%;
+    display: none; }
+  .main_header .mobile_title {
+    display: inline;
+    width: 10%;
+    font-size: 2rem;
+    color: white;
+    padding: 1%; }
+  nav {
+    width: 90%; }
+    nav a {
+      font-size: 1.2rem; } }
+
+@media (max-width: 400px) {
+  .main_header .mobile_title {
+    width: 7%; }
+  .main_header nav {
+    width: 93%; }
+    .main_header nav a {
+      font-size: 1rem; } }
+
+body {
+  min-height: 100%; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  overflow: auto; }
+  main header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #1a282e;
+    border-radius: 7px; }
+    main header h2 {
+      color: white;
+      padding: 1%;
+      font-size: 4rem;
+      margin: 0;
+      font-family: 'Russo One', sans-serif;
+      width: 100%; }
+  main .product_details {
+    background: white;
+    margin-top: 5px;
+    border-radius: 7px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em; }
+    main .product_details h3 {
+      width: 100%;
+      margin-bottom: 1em; }
+    main .product_details form {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      main .product_details form .column_first {
+        width: 35%; }
+        main .product_details form .column_first #image {
+          width: 50%;
+          height: auto; }
+      main .product_details form button {
+        background: orange;
+        color: white;
+        margin-right: 2em; }
+        main .product_details form button:hover {
+          background: orange;
+          color: white; }
+    main .product_details #delete {
+      background: red; }
+    main .product_details .buttons {
+      display: flex; }
+
+@media (max-width: 800px) {
+  form {
+    flex-direction: column;
+    align-items: center; }
+  .column_first {
+    width: 40% !important;
+    margin-right: 0 !important; }
+  h3 {
+    text-align: center; } }
+
+@media (max-width: 600px) {
+  .column_first {
+    width: 60% !important; }
+  #image {
+    width: 80% !important; } }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background: #1a282e;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px; }
+  footer p {
+    color: white; }
+  footer a {
+    display: block;
+    border-radius: 7px;
+    background: orange;
+    color: white;
+    padding: 1%;
+    margin-bottom: 1em;
+    margin-top: 1em; }
+    footer a:hover {
+      color: white; }

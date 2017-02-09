@@ -1,0 +1,333 @@
+
+
+.content
+{
+	display: flex;
+	flex-direction: column;	
+	padding-top: 10%;  /*padding so header does not cover content*/
+	padding-bottom: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+	
+	.content .filters
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+		.panel-body, .panel-default
+		{
+			background: #1a282e;
+			border:none;
+		}
+
+		.filters .search_bar
+		{	
+			margin-left: 0;
+			width: 60%;
+			margin-bottom: 2%;
+			margin-right: 40%;
+		}
+
+		.form-group .submit_button
+		{
+			background: orange;
+			color: white;
+			border: none;
+			font-size: 1.2em;
+		}
+
+		.btn-primary
+		{
+			background: #1a282e;
+			border:none;
+		}
+
+		.btn-primary:hover
+		{
+			background: #303E42;
+		}
+
+		.btn-primary:focus
+		{
+			background: #303E42;
+		}
+	
+	
+
+
+
+	.product_list
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-top: 3%;
+	}
+	
+	.product_list>a
+	{
+		width: 24%; 
+		color: black;
+		transition: all 0.2s;
+		margin-bottom: 2%;
+		display: flex;
+		flex-direction: column;
+	}
+		.product_list>a:hover
+		{
+			text-decoration: none;
+			transform: scale(1.01);
+			box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+
+		}
+
+.card
+		{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background: white;
+			height: 100%;
+			
+			
+		}
+			
+			.card figure
+			{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+			}
+
+				#discount
+				{
+					position: absolute;
+					top: 15px;
+					right: 10px;
+					color: white;
+					transform: rotate(30deg);
+					background: red;
+					text-align: center;
+					display: block;
+					width: 20%;
+					font-size: 1.5em;
+					padding: 3px;
+				} /*pridane 18/12*/
+
+			figure figcaption
+			{
+				font-size: 2rem;
+				text-align: center;
+				padding: 0.2em;
+				font-weight: bold;
+
+			}
+
+			.prod_category
+			{
+				font-weight: lighter;
+				font-size: 1.6rem;
+				font-style: italic;
+				margin-top: auto;
+			}
+				figure img
+				{
+					width: 100%;
+					height: auto;
+				}
+
+		.card strong
+		{
+			font-size: 2.5rem;
+			margin-top: auto;
+			
+		}
+
+		#newprice
+		{
+			text-decoration: none;
+			color: red;
+		} /* pridane 18/12*/
+
+		#oldprice
+		{
+			text-decoration: line-through;
+			padding-right: 10px;
+		} 
+
+
+.pagination
+{
+	display: flex;
+	flex: 0 0 100%;
+	justify-content: center;
+}
+	.pagination .page_btn
+	{
+		width: 2%;
+		text-align: center;
+		color: white;
+		font-size:1.2em;
+		margin: 0.2em;
+		background: #1a282e;
+		border-radius: 7px;
+	}
+		.pagination .page_btn:hover
+		{
+			transform: scale(1.01);
+		}
+
+		.pagination .page_btn:focus
+		{
+			color: orange;
+			transform: scale(1.01);
+		}
+
+	.pagination>b
+	{
+		font-size:1.2em;
+		padding: 0.2em;
+		color: white;
+		transform: scale(1.01);
+		background: orange;
+		width: 2%;
+		text-align: center;
+		border-radius: 7px;
+	}
+
+	.pagination>span
+	{
+		font-size: 1.2em;
+
+	}
+
+		.sorting_button
+	{
+		display: flex;
+	}
+
+		.sorting_button>a
+		{
+			color: white;
+			background: orange;
+			padding: 0.3em;
+			margin: 0.3em;
+			border-radius: 7px;
+		}
+			.sorting_button>a:hover
+			{
+				text-decoration: none;
+				background: darkorange;
+			}
+
+			.sorting_button>a.desc:after
+			{
+				content: '\21E9'
+			}
+
+			.sorting_button>a.asc:after
+			{
+				content: '\21E7'
+			}
+
+
+/*payment success modal*/
+#congrats_header
+{
+    background: #3c763d;
+}
+
+#congrats {
+    color: green;
+    font-weight: lighter;
+    padding: 6%;
+    text-align: center;
+    font-style: italic;
+}
+
+
+/*#############################################################################################################################
+###############CHECK BOXES###################################################################################################
+#############################################################################################################################*/
+
+.toggle-button {
+	margin-left: 10px;
+	margin-top: 5px;
+  position: relative;
+  display: inline-block;
+  color: #fff; }
+  .toggle-button label {
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: left; }
+  .toggle-button input {
+    display: none; }
+  .toggle-button__icon {
+    cursor: pointer;
+    pointer-events: none; }
+    .toggle-button__icon:before, .toggle-button__icon:after {
+      content: "";
+      position: absolute;
+      top: 45%;
+      left: 35%;
+      transition: 0.2s ease-out; }
+
+
+
+
+.toggle-button--tuli label {
+  line-height: 20px;
+  text-indent: 30px; }
+
+.toggle-button--tuli input[type=checkbox]:checked ~ .toggle-button__icon {
+  background: #fff; }
+  .toggle-button--tuli input[type=checkbox]:checked ~ .toggle-button__icon:before, .toggle-button--tuli input[type=checkbox]:checked ~ .toggle-button__icon:after {
+    opacity: 1; }
+
+.toggle-button--tuli .toggle-button__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s;
+  border: 2px solid #fff;
+  border-radius: 1px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); }
+  .toggle-button--tuli .toggle-button__icon:before, .toggle-button--tuli .toggle-button__icon:after {
+    top: 5px;
+    left: 2px;
+    width: 12px;
+    height: 2px;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    top: 35%;
+    background:orange; /*zmenene na orange 28/11*/
+    opacity: 0;
+    transform-origin: left center; }
+  .toggle-button--tuli .toggle-button__icon:before {
+    transform: translate(0, 0) rotate(45deg) scale(0.6, 1); }
+  .toggle-button--tuli .toggle-button__icon:after {
+    transform: translate(4px, 6px) rotate(-45deg); }
+
+.toggle-button--tuli:hover input[type=checkbox]:not(:checked) ~ .toggle-button__icon {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+
+
+.round
+{
+	background: orange !important;
+}
+
+
+
